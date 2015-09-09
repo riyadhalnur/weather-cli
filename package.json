@@ -1,0 +1,47 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "Check the weather for your city from your terminal",
+  "license": "MIT",
+  "repository": "riyadhalnur/weather-cli",
+  "author": {
+    "name": "Riyadh Al Nur",
+    "email": "riyadhalnur@verticalaxisbd.com",
+    "url": "blog.verticalaxisbd.com"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && node test.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "weather",
+    "yahoo",
+    "forecast"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "lodash": "^3.10.1",
+    "meow": "^3.3.0",
+    "request": "^2.61.0",
+    "update-notifier": "^0.5.0",
+    "yql": "~1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.1.0",
+    "xo": "^0.7.1"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ]
+  }
+}
