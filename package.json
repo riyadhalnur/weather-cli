@@ -32,7 +32,7 @@
     "lodash": "^3.10.1",
     "meow": "^3.3.0",
     "request": "^2.61.0",
-    "update-notifier": "^0.5.0",
+    "update-notifier": "^0.6.0",
     "yql": "~1.0.2"
   },
   "devDependencies": {
