@@ -16,13 +16,15 @@ $ weather-cli --help
     weather-cli [input]
 
   Options
-    city. [Default: Dhaka]
-    country. [Default: Bangladesh]
+    city [Default: Dhaka]
+    country [Default: Bangladesh]
+    scale (C/F) [Default: Celcius]
 
   Examples
-    $ weather-cli London UK
+    $ weather-cli London UK C
+    London, UK
     Condition: Partly Cloudy
-    Temperature: 32C/89.6F
+    Temperature: 32C
 ```
 
 ## License
