@@ -1,4 +1,4 @@
-# weather-cli [![Build Status](https://travis-ci.org/riyadhalnur/weather-cli.svg?branch=master)](https://travis-ci.org/riyadhalnur/weather-cli)
+# weather-cli [![Build Status](https://travis-ci.org/riyadhalnur/weather-cli.svg?branch=master)](https://travis-ci.org/riyadhalnur/weather-cli) [![Build status](https://ci.appveyor.com/api/projects/status/8o1qpopothm62y51/branch/master?svg=true)](https://ci.appveyor.com/project/riyadhalnur/weather-cli/branch/master)
 
 Check the weather for your city from your terminal
 
