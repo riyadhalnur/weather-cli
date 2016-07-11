@@ -10,10 +10,10 @@ $ npm install -g weather-cli
 ```
 
 ```shell
-$ weather-cli --help
+$ weather --help
 
   Usage
-    weather-cli [input]
+    weather [input]
 
   Options
     city [Default: Dhaka]
@@ -21,7 +21,7 @@ $ weather-cli --help
     scale (C/F) [Default: Celcius]
 
   Examples
-    $ weather-cli London UK C
+    $ weather London UK C
     London, UK
     Condition: Partly Cloudy
     Temperature: 32C
