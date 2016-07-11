@@ -1,12 +1,12 @@
 'use strict';
 
-var YQL = require('yql');
-var _ = require('lodash');
+const YQL = require('yql');
+const _ = require('lodash');
 
-module.exports = function (opts, callback) {
+module.exports = (opts, callback) => {
 	opts = opts || [];
 
-	var query;
+	let query;
 
 	if (_.isEmpty(opts)) {
 		query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="Dhaka, Bangladesh")');
@@ -14,7 +14,7 @@ module.exports = function (opts, callback) {
 		query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + opts[0] + ', ' + opts[1] + '")');
 	}
 
-	query.exec(function (err, response) {
+	query.exec((err, response) => {
 		if (err) {
 			return callback(err);
 		}

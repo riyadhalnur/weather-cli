@@ -4,22 +4,27 @@
   "description": "Check the weather for your city from your terminal",
   "license": "MIT",
   "repository": "riyadhalnur/weather-cli",
+  "main": "index.js",
   "author": {
     "name": "Riyadh Al Nur",
     "email": "riyadhalnur@verticalaxisbd.com",
     "url": "blog.verticalaxisbd.com"
   },
-  "bin": "cli.js",
+  "bin": {
+    "weather": "cli.js"
+  },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "./node_modules/mocha/bin/mocha -t 10000 tests/tests.js",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec tests/tests.js -t 100000 && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "files": [
     "index.js",
     "cli.js"
   ],
+  "preferGlobal": true,
   "keywords": [
     "cli-app",
     "cli",
@@ -32,16 +37,15 @@
     "lodash": "~4.13.0",
     "meow": "~3.3.0",
     "request": "~2.73.0",
-    "update-notifier": "~1.0.0",
+    "update-notifier": "1.0.2",
     "yql": "~1.0.2"
   },
   "devDependencies": {
-    "ava": "~0.1.0",
-    "xo": "~0.13.0"
-  },
-  "xo": {
-    "envs": [
-      "node"
-    ]
+    "chai": "3.5.0",
+    "coveralls": "2.11.9",
+    "eslint": "3.0.1",
+    "istanbul": "0.4.4",
+    "mocha": "2.5.3",
+    "mocha-lcov-reporter": "1.2.0"
   }
 }

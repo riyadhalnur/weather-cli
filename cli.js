@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 'use strict';
 
-var meow = require('meow');
-var chalk = require('chalk');
-var updateNotifier = require('update-notifier');
-var weather = require('./');
-var pkg = require('./package.json');
+const meow = require('meow');
+const chalk = require('chalk');
+const updateNotifier = require('update-notifier');
+const pkg = require('./package.json');
+const weather = require('./');
 
-var cli = meow({
+const cli = meow({
 	help: [
 		'Usage',
-		'  $ weather-cli [input]',
+		'  $ weather <input>',
 		'',
 		'Options',
 		'  city [Default: Dhaka]',
@@ -18,7 +18,7 @@ var cli = meow({
 		'  scale (C/F) [Default: Celcius]',
 		'',
 		'Examples',
-		'  $ weather-cli London UK C',
+		'  $ weather London UK C',
 		'  London, UK',
 		'  Condition: Partly Cloudy',
 		'  Temperature: 32C'
@@ -29,16 +29,16 @@ function _toCelcius(temp) {
 	return Math.round(((temp - 32) * 5) / 9);
 }
 
-updateNotifier({pkg: pkg}).notify();
+updateNotifier({ pkg}).notify();
 
-weather(cli.input, function (err, result) {
+weather(cli.input, (err, result) => {
 	if (err) {
 		console.log(chalk.bold.red(err));
 		process.exit(1);
 	}
 
-	var condition = result.query.results.channel.item.condition.text;
-	var temperature;
+	let condition = result.query.results.channel.item.condition.text;
+	let temperature;
 
 	if (cli.input[2] && cli.input[2] === 'C') {
 		temperature = _toCelcius(result.query.results.channel.item.condition.temp) + 'C';
@@ -48,8 +48,8 @@ weather(cli.input, function (err, result) {
 		temperature = _toCelcius(result.query.results.channel.item.condition.temp) + 'C';
 	}
 
-	var city = cli.input[0] ? cli.input[0] : 'Dhaka';
-	var country = cli.input[1] ? cli.input[1] : 'Bangladesh';
+	let city = cli.input[0] ? cli.input[0] : 'Dhaka';
+	let country = cli.input[1] ? cli.input[1] : 'Bangladesh';
 
 	console.log(chalk.red(city + ', ' + country));
 	console.log(chalk.cyan('Condition: ' + chalk.yellow(condition)));
