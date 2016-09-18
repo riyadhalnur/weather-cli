@@ -36,7 +36,7 @@
     "chalk": "~1.1.1",
     "lodash": "~4.15.0",
     "meow": "~3.3.0",
-    "request": "~2.74.0",
+    "request": "~2.75.0",
     "update-notifier": "1.0.2",
     "yql": "~1.0.2"
   },
