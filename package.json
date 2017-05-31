@@ -41,7 +41,7 @@
     "yql": "~1.0.2"
   },
   "devDependencies": {
-    "chai": "3.5.0",
+    "chai": "4.0.1",
     "coveralls": "2.11.16",
     "eslint": "3.15.0",
     "istanbul": "0.4.5",
