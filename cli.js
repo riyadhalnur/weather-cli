@@ -36,8 +36,9 @@ weather(cli.input, (err, result) => {
 		console.log(chalk.bold.red(err));
 		process.exit(1);
 	}
-
+try {
 	let condition = result.query.results.channel.item.condition.text;
+
 	let temperature;
 
 	if (cli.input[2] && cli.input[2] === 'C') {
@@ -55,4 +56,9 @@ weather(cli.input, (err, result) => {
 	console.log(chalk.cyan('Condition: ' + chalk.yellow(condition)));
 	console.log(chalk.cyan('Temperature: ' + chalk.yellow(temperature)));
 	process.exit();
+}
+catch(e) {
+	console.log("One or more parameters are invalid. Please check your input!\n")
+  process.exit(1);
+}
 });
