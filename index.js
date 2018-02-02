@@ -1,11 +1,45 @@
 'use strict';
 
 const axios = require('axios');
+const Conf =require('conf');
+
 const API_URL = 'https://micro-weather.now.sh';
+const config = new Conf();
 
-module.exports = (opts) => {
-  let city = opts[0] || 'Dhaka';
-  let country = opts[1] || 'Bangladesh';
+const _toFahrenheit = temp => Math.round((9 / 5) * temp + 32);
 
-  return axios.get(`${API_URL}?city=${city}&country=${country}`);
+module.exports = {
+  getWeather: (flags) => {
+    return new Promise((resolve, reject) => {
+      let city = flags.city || config.get('city');
+      let country = flags.country || config.get('country');
+
+      if (!city || !country) {
+        return reject(new Error('Country and/or city missing!'));
+      }
+
+      axios.get(`${API_URL}?city=${city}&country=${country}`)
+        .then(res => {
+          let result = Object.assign(res.data, { city: city, country: country, scale: flags.scale });
+
+          if (flags.scale === 'F') {
+            result.temp = _toFahrenheit(res.data.temp);
+          }
+
+          resolve(result);
+        })
+        .catch(err => reject(err));
+    });
+  },
+  setLocation: (opts) => {
+    return new Promise((resolve, reject) => {
+      if (!opts.city || !opts.country) {
+        return reject(new Error('Invalid and/or missing arguments!'));
+      }
+
+      config.set('city', opts.city);
+      config.set('country', opts.country);
+      resolve(`Default location set to ${opts.city}, ${opts.country}`);
+    });
+  }
 };
