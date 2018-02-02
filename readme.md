@@ -13,18 +13,24 @@ $ npm install -g weather-cli
 $ weather --help
 
   Usage
-    weather [input]
+    $ weather <input>
 
   Options
-    city [Default: Dhaka]
-    country [Default: Bangladesh]
-    scale (C/F) [Default: Celcius]
+    --city, -ct City you want to lookup weather for
+    --country, -c Country you want to lookup weather for
+    --scale, -s Weather scale. Defaults to Celcius
+    --help Show this help message
+    --version Display version info and exit
+    config Set the default location
 
   Examples
-    $ weather London UK C
-    London, UK
+    $ weather -c Dhaka -C Bangladesh
+    Dhaka, Bangladesh
     Condition: Partly Cloudy
-    Temperature: 32C
+    Temperature: 32°C
+
+    $ weather config -c Dhaka -C Bangladesh
+    Default location set to Dhaka, Bangladesh
 ```
 
 ### License  
