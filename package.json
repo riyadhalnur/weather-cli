@@ -44,7 +44,7 @@
     "coveralls": "3.0.0",
     "eslint": "4.16.0",
     "istanbul": "0.4.5",
-    "mocha": "5.0.0",
+    "mocha": "5.0.4",
     "mocha-lcov-reporter": "1.3.0"
   }
 }
