@@ -34,7 +34,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "chalk": "2.3.0",
-    "conf": "1.4.0",
+    "conf": "2.0.0",
     "meow": "4.0.0",
     "update-notifier": "2.3.0"
   },
