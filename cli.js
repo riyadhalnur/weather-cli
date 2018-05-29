@@ -12,8 +12,8 @@ Usage
   $ weather <input>
 
 Options
-  --city, -ct City you want to lookup weather for
-  --country, -c Country you want to lookup weather for
+  --city, -c City you want to lookup weather for
+  --country, -C Country you want to lookup weather for
   --scale, -s Weather scale. Defaults to Celcius
   --help Show this help message
   --version Display version info and exit
