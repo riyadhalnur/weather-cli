@@ -1,5 +1,12 @@
 ## Change Log
 
+### v1.3.2 (2018/05/29 08:18 +00:00)
+- [8efa6e1](https://github.com/riyadhalnur/weather-cli/commit/8efa6e1fb4cd9c1b840c2b39a1934746713e3440) 1.3.2 (@riyadhalnur)
+- [61931a1](https://github.com/riyadhalnur/weather-cli/commit/61931a1bb35edea8c111ba5aa0a4f8e57458c9df) Drop NodeJS 4 support (@riyadhalnur)
+- [a09d8c5](https://github.com/riyadhalnur/weather-cli/commit/a09d8c5be080c624a2b3009e2b2ba319d7aabaef) Fix NPM installation on appveyor (@riyadhalnur)
+- [eef5dc9](https://github.com/riyadhalnur/weather-cli/commit/eef5dc9332efbb4861bf58965fad4e4a523b1359) HOTFIX: Install latest NPM on CI (@riyadhalnur)
+- [01a874b](https://github.com/riyadhalnur/weather-cli/commit/01a874b97836a8c213861fd124f7aff02b389873) Updated CHANGELOG - v1.3.1 (@riyadhalnur)
+
 ### v1.3.1 (2018/05/29 08:00 +00:00)
 - [11bd98d](https://github.com/riyadhalnur/weather-cli/commit/11bd98d8cca3d11d21cee43a59bea7240ec423d4) 1.3.1 (@riyadhalnur)
 - [c062f32](https://github.com/riyadhalnur/weather-cli/commit/c062f322b12c18741401cb10f12ac36523864b9f) [CHORE] Update deps (@riyadhalnur)
