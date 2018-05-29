@@ -1,7 +1,17 @@
 ## Change Log
 
-### v1.3 (2018/02/02 09:12 +00:00)
+### v1.3.1 (2018/05/29 08:00 +00:00)
+- [11bd98d](https://github.com/riyadhalnur/weather-cli/commit/11bd98d8cca3d11d21cee43a59bea7240ec423d4) 1.3.1 (@riyadhalnur)
+- [c062f32](https://github.com/riyadhalnur/weather-cli/commit/c062f322b12c18741401cb10f12ac36523864b9f) [CHORE] Update deps (@riyadhalnur)
+- [6bae1ee](https://github.com/riyadhalnur/weather-cli/commit/6bae1ee651b245703b1817712312e2d958e0d824) Replace NodeJS 9 with 10 in CI. Closes #130 (@riyadhalnur)
+- [e5bab96](https://github.com/riyadhalnur/weather-cli/commit/e5bab9644cbb76bdb5dfd17db8434d2dd09b591a) Fix help message. Closes #132 (@riyadhalnur)
+
+### v1.3.0 (2018/02/02 09:23 +00:00)
+- [e700694](https://github.com/riyadhalnur/weather-cli/commit/e7006946f118e7538d47378d4e1a9462c57a0afc) 1.3.0 (@riyadhalnur)
+- [0a25b89](https://github.com/riyadhalnur/weather-cli/commit/0a25b89033eee7b258e79f2aae43de258bbdf55c) Added new help text for app in README (@riyadhalnur)
+- [4929f40](https://github.com/riyadhalnur/weather-cli/commit/4929f407748809188cc686cc5024ccfdd9b146b2) Add new badge and add changelog (@riyadhalnur)
 - [7121c31](https://github.com/riyadhalnur/weather-cli/commit/7121c31472e885132469a77c45cecaefbd0f7f62) Update license (@riyadhalnur)
+- [ed14614](https://github.com/riyadhalnur/weather-cli/commit/ed146145628e1cb2d17019e482c552c5e0c407dd) Add contributing and CoC docs (@riyadhalnur)
 - [821b175](https://github.com/riyadhalnur/weather-cli/commit/821b17527a57be878c11e695f4fe957632c99985) Update test cases (@riyadhalnur)
 - [564ad1b](https://github.com/riyadhalnur/weather-cli/commit/564ad1bc9ec0e2c4b7fa4ffd831aca6b2326998a) Show flags for help and version (@riyadhalnur)
 - [99f23d7](https://github.com/riyadhalnur/weather-cli/commit/99f23d79ae95e5a452927b7ca5afe7f74232ac9e) Update CLI file to use new API (@riyadhalnur)
@@ -13,7 +23,6 @@
 - [3aa1926](https://github.com/riyadhalnur/weather-cli/commit/3aa1926f62a3c2ce58a7d11feccc1f9677a54e9c) Add new dev dep for tsting promise returning funcs (@riyadhalnur)
 - [8553f87](https://github.com/riyadhalnur/weather-cli/commit/8553f87522775ca7528818554db012d0eb21edd4) Update, remove package deps (@riyadhalnur)
 - [4ba9658](https://github.com/riyadhalnur/weather-cli/commit/4ba9658716ae2ad762fb82a95b0c64f085daa83e) Test agsint newer versions of NodeJS on CI and remove NodeJS v5 (@riyadhalnur)
-- [ed14614](https://github.com/riyadhalnur/weather-cli/commit/ed146145628e1cb2d17019e482c552c5e0c407dd) Add contributing and CoC docs (@riyadhalnur)
 
 ### v1.2.3 (2017/07/08 03:09 +00:00)
 - [d315f3d](https://github.com/riyadhalnur/weather-cli/commit/d315f3da23e264fa7b45d568a1e80ffee6af5cdc) 1.2.3 (@riyadhalnur)
