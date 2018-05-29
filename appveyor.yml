@@ -5,9 +5,12 @@ environment:
   - nodejs_version: "8"
   - nodejs_version: "10"
 
+build_script:
+  - npm i -g npm@latest
+
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install
+  - npm ci
 
 test_script:
   - node --version
