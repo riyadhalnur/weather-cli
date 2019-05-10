@@ -18,7 +18,9 @@
   },
   "scripts": {
     "test": "mocha -t 10000 tests/tests.js",
-    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec tests/tests.js -t 100000 && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec tests/tests.js -t 100000 && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "files": [
     "index.js",
@@ -36,7 +38,8 @@
     "chalk": "2.3.1",
     "conf": "2.0.0",
     "meow": "4.0.1",
-    "update-notifier": "2.4.0"
+    "update-notifier": "2.4.0",
+    "snyk": "^1.163.1"
   },
   "devDependencies": {
     "chai": "4.1.2",
@@ -46,5 +49,6 @@
     "istanbul": "0.4.5",
     "mocha": "5.0.1",
     "mocha-lcov-reporter": "1.3.0"
-  }
+  },
+  "snyk": true
 }
