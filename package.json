@@ -14,7 +14,7 @@
     "weather": "cli.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "scripts": {
     "test": "mocha -t 10000 tests/tests.js",
