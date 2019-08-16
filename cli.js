@@ -17,7 +17,7 @@ Options
   --scale, -s Weather scale. Defaults to Celcius
   --help Show this help message
   --version Display version info and exit
-  config Set the default location
+  config Set the default location and scale
 
 Examples
   $ weather -c Dhaka -C Bangladesh
@@ -25,8 +25,8 @@ Examples
   Condition: Partly Cloudy
   Temperature: 32°C
 
-  $ weather config -c Dhaka -C Bangladesh
-  Default location set to Dhaka, Bangladesh
+  $ weather config -c Dhaka -C Bangladesh -s F
+  Default location set to Dhaka, Bangladesh and scale to F
 `, {
   flags: {
     city: {

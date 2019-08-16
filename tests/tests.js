@@ -56,12 +56,18 @@ describe('Weather CLI', () => {
   describe('Configure defaults', () => {
     it('should print success message if config set successfully', () => {
       return weather.setLocation({city: 'Dhaka', country: 'Bangladesh'}).should.be.fulfilled.then(res => {
-        res.should.equal('Default location set to Dhaka, Bangladesh');
+        res.should.equal('Default location set to Dhaka, Bangladesh and scale to C');
       });
     });
 
     it('should return error if arguments are missing', () => {
       return weather.setLocation({city: 'Dhaka'}).should.be.rejected;
+    });
+
+    it('should set custom location and scale', () => {
+      return weather.setLocation({city: 'Dhaka', country: 'Bangladesh', scale: 'F'}).should.be.fulfilled.then(res => {
+        res.should.equal('Default location set to Dhaka, Bangladesh and scale to F');
+      });
     });
   });
 });

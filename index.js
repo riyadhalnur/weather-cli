@@ -22,8 +22,9 @@ module.exports = {
         .then(res => {
           let result = Object.assign(res.data, { city: city, country: country, scale: flags.scale });
 
-          if (flags.scale === 'F') {
+          if (flags.scale === 'F' || config.get('scale') === 'F') {
             result.temp = _toFahrenheit(res.data.temp);
+            result.scale = 'F';
           }
 
           resolve(result);
@@ -39,7 +40,12 @@ module.exports = {
 
       config.set('city', opts.city);
       config.set('country', opts.country);
-      resolve(`Default location set to ${opts.city}, ${opts.country}`);
+
+      if (opts.scale) {
+        config.set('scale', opts.scale.toUpperCase());
+      }
+
+      resolve(`Default location set to ${opts.city}, ${opts.country} and scale to ${opts.scale ? opts.scale : 'C'}`);
     });
   }
 };
