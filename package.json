@@ -22,7 +22,8 @@
   },
   "files": [
     "index.js",
-    "cli.js"
+    "cli.js",
+    "schema.js"
   ],
   "preferGlobal": true,
   "keywords": [
