@@ -1,10 +1,14 @@
 'use strict';
 
 const axios = require('axios');
-const Conf =require('conf');
+const Conf = require('conf');
 
 const API_URL = 'https://micro-weather.now.sh';
-const config = new Conf();
+const schema = require('./schema');
+const config = new Conf({
+  projectName: 'weather-cli',
+  schema
+});
 
 const _toFahrenheit = temp => Math.round((9 / 5) * temp + 32);
 

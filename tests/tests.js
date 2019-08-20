@@ -4,7 +4,12 @@
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 const Conf = require('conf');
-const config = new Conf();
+
+const schema = require('../schema');
+const config = new Conf({
+  projectName: 'weather-cli',
+  schema
+});
 const weather = require('../index.js');
 
 chai.use(chaiAsPromised);
