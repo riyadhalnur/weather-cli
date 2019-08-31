@@ -65,6 +65,10 @@ if (cli.input.length && cli.input[0] === 'config') {
       console.log(chalk.red(`${result.city}, ${result.country}`));
       console.log(chalk.cyan(`Condition: ${chalk.yellow(result.condition)}`));
       console.log(chalk.cyan(`Temperature: ${chalk.yellow(result.temp)}${chalk.yellow('°' + result.scale)}`));
+
+      if (result.aqi) {
+        console.log(chalk.cyan(`Air Quality: ${chalk.yellow(result.aqi)} ${chalk.yellow(weather.mapAQI(result.aqi))}`));
+      }
       process.exit(0);
     }).catch(err => {
       if (err) {
