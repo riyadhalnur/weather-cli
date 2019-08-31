@@ -1,6 +1,6 @@
 {
   "name": "weather-cli",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Check the weather for your city from your terminal",
   "license": "MIT",
   "repository": "riyadhalnur/weather-cli",
