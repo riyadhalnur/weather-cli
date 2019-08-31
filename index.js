@@ -51,5 +51,20 @@ module.exports = {
 
       resolve(`Default location set to ${opts.city}, ${opts.country} and scale to ${opts.scale ? opts.scale : 'C'}`);
     });
+  },
+  mapAQI: (aqi) => {
+    if (aqi >= 0 && aqi <= 50) {
+      return 'Good';
+    } else if (aqi >= 51 && aqi <= 100) {
+      return 'Moderate';
+    } else if (aqi >= 101 && aqi <= 150) {
+      return 'Unhealthy for sensitive groups';
+    } else if (aqi >= 151 && aqi <= 200) {
+      return 'Unhealthy';
+    } else if (aqi >= 201 && aqi <= 300) {
+      return 'Very Unhealthy';
+    } else if (aqi > 300) {
+      return 'Hazardous';
+    }
   }
 };
