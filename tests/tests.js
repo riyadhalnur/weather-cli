@@ -5,12 +5,12 @@ const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 const Conf = require('conf');
 
-const schema = require('../schema');
+const schema = require('../src/schema');
 const config = new Conf({
   projectName: 'weather-cli',
   schema
 });
-const weather = require('../index.js');
+const weather = require('../src/index.js');
 
 chai.use(chaiAsPromised);
 chai.should();
