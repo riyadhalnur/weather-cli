@@ -4,7 +4,7 @@
 const meow = require('meow');
 const chalk = require('chalk');
 const updateNotifier = require('update-notifier');
-const pkg = require('./package.json');
+const pkg = require('../package.json');
 const weather = require('./');
 
 const cli = meow(`
