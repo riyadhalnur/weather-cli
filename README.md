@@ -18,7 +18,7 @@ $ weather --help
     $ weather <input>
 
   Options
-    --city, -c City you want to lookup weather for
+    --city, -c City you want to lookup weather for (add state code after city name if city exists in multiple places)
     --country, -C Country you want to lookup weather for
     --scale, -s Weather scale. Defaults to Celcius
     --help Show this help message
