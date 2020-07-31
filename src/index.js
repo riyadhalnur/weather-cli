@@ -3,7 +3,7 @@
 const axios = require('axios');
 const Conf = require('conf');
 
-const API_URL = 'https://micro-weather.now.sh';
+const API_URL = 'https://micro-weather.vercel.app';
 const schema = require('./schema');
 const config = new Conf({
   projectName: 'weather-cli',
