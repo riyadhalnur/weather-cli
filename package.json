@@ -33,7 +33,7 @@
     "temperature"
   ],
   "dependencies": {
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "chalk": "4.1.0",
     "conf": "7.1.1",
     "meow": "7.0.1",
