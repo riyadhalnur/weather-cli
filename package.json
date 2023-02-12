@@ -37,7 +37,7 @@
     "chalk": "4.1.0",
     "conf": "7.1.1",
     "meow": "8.0.0",
-    "update-notifier": "6.0.0"
+    "update-notifier": "6.0.2"
   },
   "devDependencies": {
     "chai": "4.2.0",
