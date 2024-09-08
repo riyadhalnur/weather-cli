@@ -33,11 +33,11 @@
     "temperature"
   ],
   "dependencies": {
-    "axios": "0.21.3",
+    "axios": "1.6.8",
     "chalk": "4.1.0",
-    "conf": "7.1.1",
-    "meow": "8.0.0",
-    "update-notifier": "6.0.0"
+    "conf": "12.0.0",
+    "meow": "12.1.0",
+    "update-notifier": "7.3.0"
   },
   "devDependencies": {
     "chai": "4.2.0",
