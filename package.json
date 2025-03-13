@@ -35,8 +35,8 @@
   "dependencies": {
     "axios": "1.8.2",
     "chalk": "4.1.0",
-    "conf": "7.1.1",
-    "meow": "8.0.0",
+    "conf": "10.0.0",
+    "meow": "10.0.0",
     "update-notifier": "6.0.0"
   },
   "devDependencies": {
